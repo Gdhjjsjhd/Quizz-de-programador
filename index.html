@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quem é você na Tecnologia?</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Quem é você na Tecnologia?</h1>
+        <p class="subtitle">Responda de 0 a 10. Ao final mostramos seu
+            perfil tech.</p>
+        <div id="quizArea">
+            <div id="progress">Pergunta <span id="cur">0</span> / <span id="total">0</span></div>
+            <div id="question" class="question"></div>
+            <div class="controls">
+                <input id="answer" type="range" min="0" max="10" value="5" />
+                <div class="rangeVal">Valor: <span id="val">5</span></div>
+                <button id="next">Próxima</button>
+            </div>
+        </div>
+
+        <div id="resultArea" class="hidden">
+            <h2 id="resultTitle"></h2>
+            <p id="resultDesc"></p>
+            <div id="top3"></div>
+            <button id="restart">Refazer</button>
+        </div>
+        <footer class="footer">Feito com ☕ e JavaScript — (rodando
+            localmente)</footer>
+    </main>
+    <!--QUIZ-DATA-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+:root {
+    --bg: #071025;
+    --card: #0e1a2b;
+    --accent: #00d084;
+    --muted: #9fb1c8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, #031021 0%, #071025 100%);
+    color: #e6f3ff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 760px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02),
+            rgba(255, 255, 255, 0.01));
+
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin: 0 0 18px;
+}
+
+.question {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+input[type=range] {
+    flex: 1;
+}
+
+.rangeVal {
+    min-width: 110px;
+    color: var(--muted)
+}
+
+button {
+    background: var(--accent);
+    color: #00221a;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+.hidden {
+    display: none
+}
+
+#resultTitle {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+#top3 {
+    margin-top: 12px;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 8px;
+    border-radius: 6px;
+    margin: 6px 0;
+}
+
+.footer {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.progressbar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #7af1b5);
+    width: 0%;
+    transition: width 0.35s ease;
+}
